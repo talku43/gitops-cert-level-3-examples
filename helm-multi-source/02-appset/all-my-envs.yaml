@@ -35,11 +35,11 @@ spec:
         version: prod         
       - env: integration-gpu
         region: us
-        type: non-production
+        type: non-prod
         version: qa
       - env: integration-non-gpu
         region: us
-        type: non-production
+        type: non-prod
         version: qa
   template:      
     metadata:
@@ -74,5 +74,4 @@ spec:
           - CreateNamespace=true  
         automated: 
           prune: true 
-          selfHeal: true 
-      
+          selfHeal: true
