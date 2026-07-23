@@ -9,7 +9,7 @@ spec:
   generators:
   - pullRequest:
       github:
-        owner: codefresh-contrib
+        owner: talku43
         repo: gitops-cert-level-3-examples
       requeueAfterSeconds: 180
   template:
