@@ -17,12 +17,12 @@ spec:
       name: 'myapp-{{.branch}}'
     spec:
       source:
-        repoURL: 'https://github.com/codefresh-contrib/gitops-cert-level-3-examples.git'
+        repoURL: 'https://github.com/talku43/gitops-cert-level-3-examples.git'
         targetRevision: HEAD
         path: preview-environments/kustomize-preview-app/ 
         kustomize:
           images:
-            - 'docker.io/kostiscodefresh/my-preview-app:{{.branch_slug}}'
+            - 'docker.io/talku43/my-preview-app:{{.branch_slug}}'
       project: "default"
       destination:
         server: https://kubernetes.default.svc
