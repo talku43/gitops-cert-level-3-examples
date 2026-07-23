@@ -22,7 +22,7 @@ spec:
         path: preview-environments/kustomize-preview-app/ 
         kustomize:
           images:
-            - 'docker.io/talku43/my-preview-app:{{.branch_slug}}'
+            - 'docker.io/kostiscodefresh/my-preview-app:{{.branch_slug}}'
       project: "default"
       destination:
         server: https://kubernetes.default.svc
